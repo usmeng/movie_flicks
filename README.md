@@ -32,7 +32,10 @@ The following **bonus** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [ ] Use MVP architecture to separate presentation layer and data layer
+* [ ] Use ReycleView instead of listview
+* [ ] Use Fragment instead of new Activity for editing items
+* [ ] Use Constrainlayout instead of Linerlayout and relativelayout
 
 ## Video Walkthrough
 
@@ -48,9 +51,9 @@ Describe any challenges encountered while building the app.
 
 ## Open-source libraries used
 - [RxJava](https://github.com/ReactiveX/RxJava) - a library for composing asynchronous and event-based programs using observable sequences for the Java VM.
-- [Retrofit] (https://github.com/square/retrofit) - Type-safe HTTP client for Android and Java by Square, Inc.
-- [okhttp] (https://github.com/square/okhttp) - An HTTP+HTTP/2 client for Android and Java applications.
-- [gson] (https://github.com/google/gson) - A Java serialization/deserialization library to convert Java Objects into JSON and back
+- [Retrofit](https://github.com/square/retrofit) - Type-safe HTTP client for Android and Java by Square, Inc.
+- [okhttp](https://github.com/square/okhttp) - An HTTP+HTTP/2 client for Android and Java applications.
+- [gson](https://github.com/google/gson) - A Java serialization/deserialization library to convert Java Objects into JSON and back
 - [Android Async HTTP](https://github.com/loopj/android-async-http) - Simple asynchronous HTTP requests with JSON parsing
 - [Glide](https://github.com/Masterminds/glide) - Image loading and caching library for Android
 
