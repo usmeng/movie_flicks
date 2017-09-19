@@ -2,6 +2,7 @@ package com.meng.flicks.presentation;
 
 import android.Manifest;
 import android.app.FragmentManager;
+import android.content.res.Configuration;
 import android.os.Bundle;
 
 import com.meng.flicks.presentation.base.BaseActivity;
@@ -32,12 +33,12 @@ public class MainActivity extends BaseActivity implements
         fragmentManager = getFragmentManager();
 
         requestPermission(Manifest.permission.INTERNET).subscribe(integer -> {
-                if(savedInstanceState == null) {
-                    articleListFragment = new MovieListFragment();
-                    fragmentManager.beginTransaction()
-                            .add(R.id.article_fragment, articleListFragment, MovieListFragment.TAG)
-                            .commit();
-                }
+            if (savedInstanceState == null) {
+                articleListFragment = new MovieListFragment();
+                fragmentManager.beginTransaction()
+                        .add(R.id.article_fragment, articleListFragment, MovieListFragment.TAG)
+                        .commit();
+            }
         });
     }
 
@@ -49,7 +50,7 @@ public class MainActivity extends BaseActivity implements
     @Override
     public void showMovieList(List<MoveResponse> moveResponses) {
         MovieListFragment listFragment = (MovieListFragment) fragmentManager.findFragmentByTag(MovieListFragment.TAG);
-        if(listFragment == null) return;
+        if (listFragment == null) return;
         listFragment.loadData(moveResponses);
     }
 

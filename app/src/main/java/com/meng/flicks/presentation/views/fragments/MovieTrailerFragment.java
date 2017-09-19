@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.meng.flicks.excutor.API;
+import com.meng.flicks.data.API;
 import com.meng.flicks.presentation.beans.MoveResponse;
 import com.meng.flicks.R;
 

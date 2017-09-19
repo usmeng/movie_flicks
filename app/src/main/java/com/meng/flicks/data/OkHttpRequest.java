@@ -106,41 +106,4 @@ public class OkHttpRequest {
         }
     }
 
-    /*
-    String apiKey = "api-key=c281ccb0cd1e48f18fb06ce418a1bfe3";
-    String url = "https://api.nytimes.com/svc/search/v2/articlesearch.json?" + apiKey + "&q=";
-    public String getUrl(String keyword) {
-        return url + keyword;
-    }
-
-    public String imageUrl(String url) {
-        return "https://www.nytimes.com/" + url;
-    }
-
-    public String getString(String url) {
-    	OkHttpClient client = new OkHttpClient();
-
-    	Request request = new Request.Builder().url(url).build();
-        try {
-            Response results = client.newCall(request).execute();
-            return results.body().string();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        return "";
-    }
-
-    public InputStream getStream(String url) {
-        OkHttpClient client = new OkHttpClient();
-        Request request = new Request.Builder().url(url).build();
-        try {
-            Response results = client.newCall(request).execute();
-            return results.body().byteStream();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }*/
-
 }
